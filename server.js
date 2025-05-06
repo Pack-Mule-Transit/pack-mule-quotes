@@ -16,3 +16,4 @@ app.get("*", (req, res) => {
 app.listen(PORT, HOST, () => {
   console.log(`Server running on http://${HOST}:${PORT}`);
 });
+app.use(express.static(path.join(__dirname, 'public')));
